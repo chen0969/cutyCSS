@@ -1,1 +1,18 @@
 // this should put some basic codes
+@use 'variables' ;
+
+//List style
+ul {
+    margin: 0 0 0 20px;
+    padding: 25px 0;
+    list-style: variables.$list-ul;
+}
+
+ol {
+    margin: 0 0 0 20px;
+    padding: 25px 0 0 0;
+    list-style: variables.$list-ol;
+}
+
+//button style
+

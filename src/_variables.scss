@@ -1,1 +1,22 @@
 // this should put varible settings, like font size preset or weight settings
+// _variables.scss
+$font-headings: "Courgette", serif;
+//font weights
+$font-regular: 400;
+$font-extra-light: 200;
+$font-light: 300;
+$font-medium: 500;
+$font-semibold: 600;
+
+//font sizes
+$font-size-small: 16px;
+$font-size-medium: 22px;
+$font-size-large: 40px;
+$font-size-xl: 60px;
+$font-size-2xl: 80px;
+
+//list style 
+$list-ul: square;
+$list-ol: lower-roman;
+
+//button style

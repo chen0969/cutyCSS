@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Courgette", serif;
+}
+
+h1 {
+  font-size: 80px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+ul {
+  margin: 0 0 0 20px;
+  padding: 25px 0;
+  list-style: square;
+}
+
+ol {
+  margin: 0 0 0 20px;
+  padding: 25px 0 0 0;
+  list-style: lower-roman;
+}
+
+/*# sourceMappingURL=css.good.css.map */

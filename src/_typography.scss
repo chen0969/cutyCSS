@@ -1,1 +1,38 @@
 // this should put the font family
+@use 'font-headings' ;
+@use 'variables' ;
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: variables.$font-headings;
+}
+
+h1 {
+    font-size: variables.$font-size-2xl;
+    font-weight: variables.$font-semibold;
+}
+
+h2 {
+    font-size: variables.$font-size-xl;
+    font-weight: variables.$font-medium;
+}
+
+h3 {
+    font-size: variables.$font-size-large;
+    font-weight: variables.$font-semibold;
+}
+
+h4 {
+    font-size: variables.$font-size-medium;
+    font-weight: variables.$font-light;
+}
+
+h5 {
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-light;
+}
+
+h6 {
+    font-size: variables.$font-size-small;
+    font-weight: variables.$font-extra-light;
+}
