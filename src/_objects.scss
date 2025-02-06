@@ -1,1 +1,41 @@
 // this should put some style simple like "buttons" "lines"
+@import 'variables';
+
+// Base object styles
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $spacing-unit * 2;
+}
+
+.grid {
+    display: grid;
+    gap: $spacing-unit;
+
+    &--2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &--4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: $spacing-unit;
+
+    &--center {
+        justify-content: center;
+    }
+
+    &--column {
+        flex-direction: column;
+    }
+}

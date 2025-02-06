@@ -19,7 +19,7 @@ Please focus on your assigned tasks:
   - `utility.scss`
   - `reset.scss`
   - `variables.scss`
-- **Peng**:
+- **Rui**:
   - `typography.scss`
   - `objects.scss`
 - **Ana**:

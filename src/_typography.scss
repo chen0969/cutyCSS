@@ -1,1 +1,33 @@
 // this should put the font family
+@import 'variables';
+
+// Typography styles
+.typography {
+    font-family: $font-family;
+    line-height: 1.6;
+    color: $text-color;
+
+    &__heading {
+        font-weight: bold;
+        margin-bottom: $spacing-unit;
+    }
+
+    &__paragraph {
+        font-size: $base-font-size;
+        margin-bottom: $spacing-unit * 2;
+    }
+
+    &__blockquote {
+        font-style: italic;
+        border-left: 4px solid $primary-color;
+        padding-left: $spacing-unit;
+        color: darken($text-color, 20%);
+    }
+
+    &__code {
+        font-family: monospace;
+        background-color: lighten($secondary-color, 30%);
+        padding: $spacing-unit / 2;
+        border-radius: 4px;
+    }
+}
