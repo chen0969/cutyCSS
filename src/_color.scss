@@ -1,0 +1,19 @@
+@use "_variables" as *;
+
+.text{
+    &-prime{
+        color: $main-topic;
+    }
+    &-success{
+        color: $main-green;
+    }
+    &-alert{
+        color: $main-red;
+    }
+    &-link{
+        color: $main-blue;
+    }
+    &-notice{
+        color: $main-orange;
+    }
+}

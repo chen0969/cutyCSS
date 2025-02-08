@@ -1,1 +1,89 @@
-// this should put some root settings
+// this file should put the classes which is commonly used in the project.
+.u-sub{
+    &__header, &__main, &__footer{
+        padding: var(--spacing-4);
+        width: 80vw;
+        background-color: white;
+    }
+}
+
+// width and height
+// w
+// h
+.u-height{
+    &__100vh{
+        height: 100vh;
+    }
+    &__50vh{
+        height: 50vh;
+    }
+    &__25vh{
+        height: 25vh;
+    }
+    &__10vh{
+        height: 10vh;
+    }
+    &__5vh{
+        height: 5vh;
+    }
+}
+
+// display system
+
+.u-d{
+    &__block{
+        display: block;
+    }
+    &__flex{
+        display: flex;
+    }
+
+    &__row{
+        flex-direction: row;
+    }
+
+    &__column{
+        flex-direction: column;
+    }
+
+    &__align-items-center{
+        align-items: center;
+    }
+
+    &__justify-content-center{
+        justify-content: center;
+    }
+}
+
+// grid system
+@mixin cols($col){
+    width: calc(100%/$col);
+}
+
+.u-container{
+    &__100vw{
+        width: 100vw;
+    }
+
+    &__75vw{
+        width: 75vw;
+    }
+
+    &__50vw{
+        width: 50vw;
+    }
+
+    &__25vw{
+        width: 25vw;
+    }
+
+    &__1-col{
+        @include cols(1);
+    }
+    &__2-col{
+        @include cols(2);
+    }
+    &__3-col{
+        @include cols(3);
+    }
+}

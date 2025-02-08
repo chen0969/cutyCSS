@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import 'normalize.css/normalize.css';
 :root {
   --spacing-160: 16rem;
@@ -72,41 +73,10 @@
 }
 @media (max-width: 575.98px) {
   :root {
-    --spacing-160: 24vw;
-    --spacing-160: 30vw;
-    --spacing-120: 20vw;
-    --spacing-160: 30vw;
-    --spacing-100: 18vw;
-    --spacing-160: 30vw;
-    --spacing-88: 17vw;
-    --spacing-160: 30vw;
-    --spacing-80: 16vw;
-    --spacing-160: 30vw;
-    --spacing-72: 15vw;
-    --spacing-160: 30vw;
-    --spacing-64: 14vw;
-    --spacing-160: 30vw;
-    --spacing-56: 12vw;
-    --spacing-160: 30vw;
-    --spacing-48: 10vw;
-    --spacing-160: 30vw;
-    --spacing-40: 8vw;
-    --spacing-160: 30vw;
-    --spacing-32: 6vw;
-    --spacing-160: 30vw;
-    --spacing-24: 4vw;
-    --spacing-160: 30vw;
-    --spacing-16: 3vw;
-    --spacing-160: 30vw;
-    --spacing-12: 2vw;
     --spacing-160: 30vw;
   }
 }
-@media (max-width: 767.98px) {
-  :root {
-    --section-spacing-x: 2vw;
-  }
-}
+
 @media (max-width: 767.98px) {
   :root {
     --text-4xl: 3.6rem;
@@ -122,10 +92,190 @@
     --text-md: 1.7rem;
   }
 }
+@media (max-width: 767.98px) {
+  :root {
+    --section-spacing-x: 2vw;
+  }
+}
+.p__2 {
+  padding: var(--spacing-2);
+}
+.p__4 {
+  padding: var(--spacing-4);
+}
+.p__8 {
+  padding: var(--spacing-8);
+}
+.p__12 {
+  padding: var(--spacing-12);
+}
 
-h1, h2, h3 {
+.typography {
+  line-height: 1.6;
+  color: #2a42e1;
+}
+.typography__heading {
+  font-family: "Bebas Neue", serif;
+  font-weight: bold;
+  margin-bottom: var(--spacing-4);
+}
+.typography__paragraph {
+  font-family: "Poppins", serif;
+  font-size: var(--text-sm);
+  margin-bottom: calc(var(--spacing-4) * 2);
+}
+.typography__blockquote {
+  font-family: "Bebas Neue", serif;
+  font-style: italic;
+  border-left: 4px solid #2a42e1;
+  padding-left: var(--spacing-4);
+  color: #3b3b3b;
+}
+.typography__code {
+  font-family: monospace;
+  background-color: #96a3f5;
+  padding: calc(var(--spacing-4) / 2);
+  border-radius: 4px;
+}
+
+.hero {
+  background-color: gray;
+  width: 100vw;
+  padding: var(--spacing-4);
+}
+
+.u-sub__header, .u-sub__main, .u-sub__footer {
+  padding: var(--spacing-4);
+  width: 80vw;
+  background-color: white;
+}
+
+.u-height__100vh {
+  height: 100vh;
+}
+.u-height__50vh {
+  height: 50vh;
+}
+.u-height__25vh {
+  height: 25vh;
+}
+.u-height__10vh {
+  height: 10vh;
+}
+.u-height__5vh {
+  height: 5vh;
+}
+
+.u-d__block {
+  display: block;
+}
+.u-d__flex {
+  display: flex;
+}
+.u-d__row {
+  flex-direction: row;
+}
+.u-d__column {
+  flex-direction: column;
+}
+.u-d__align-items-center {
+  align-items: center;
+}
+.u-d__justify-content-center {
+  justify-content: center;
+}
+
+.u-container__100vw {
+  width: 100vw;
+}
+.u-container__75vw {
+  width: 75vw;
+}
+.u-container__50vw {
+  width: 50vw;
+}
+.u-container__25vw {
+  width: 25vw;
+}
+.u-container__1-col {
+  width: 100%;
+}
+.u-container__2-col {
+  width: 50%;
+}
+.u-container__3-col {
+  width: 33.3333333333%;
+}
+
+.text-prime {
+  color: #e24b00;
+}
+.text-success {
+  color: #1bf65d;
+}
+.text-alert {
+  color: #cf0a0a;
+}
+.text-link {
+  color: #2a42e1;
+}
+.text-notice {
+  color: #dea726;
+}
+
+body {
+  background-color: #d6cfb9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+body header, body main, body footer {
+  display: block;
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  background-color: #3b3b3b;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bebas Neue", serif;
+}
+
+h1 {
+  font-size: var(--text-4xl);
+}
+
+h2 {
   font-size: var(--text-3xl);
-  font-weight: 900;
+}
+
+h3 {
+  font-size: var(--text-2xl);
+}
+
+h4 {
+  font-size: var(--text-xl);
+}
+
+h5 {
+  font-size: var(--text-lg);
+}
+
+h6 {
+  font-size: var(--text-md);
+}
+
+p, ul, li, a, code, pre {
+  font-family: "Poppins", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,33 +1,35 @@
-// this should put the font family
-@import 'variables';
+@use "_variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // Typography styles
 .typography {
-    font-family: $font-family;
     line-height: 1.6;
-    color: $text-color;
+    color: $main-blue; // FIXED: Remove `--`, SCSS variables use `$`
 
     &__heading {
+        font-family: "Bebas Neue", serif;
         font-weight: bold;
-        margin-bottom: $spacing-unit;
+        margin-bottom: var(--spacing-4);
     }
 
     &__paragraph {
-        font-size: $base-font-size;
-        margin-bottom: $spacing-unit * 2;
+        font-family: "Poppins", serif;
+        font-size: var(--text-sm);
+        margin-bottom: calc(var(--spacing-4) * 2);
     }
 
     &__blockquote {
+        font-family: "Bebas Neue", serif;
         font-style: italic;
-        border-left: 4px solid $primary-color;
-        padding-left: $spacing-unit;
-        color: darken($text-color, 20%);
+        border-left: 4px solid $main-blue; // FIXED: Remove `--`
+        padding-left: var(--spacing-4);
+        color: $main-dark; // FIXED: Added missing semicolon
     }
 
     &__code {
         font-family: monospace;
-        background-color: lighten($secondary-color, 30%);
-        padding: $spacing-unit / 2;
+        background-color: $second-blue; // FIXED: Ensure `$second-blue` exists
+        padding: calc(var(--spacing-4) / 2);
         border-radius: 4px;
     }
 }

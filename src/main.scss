@@ -1,11 +1,48 @@
 // this should put big tag styles, like "body" or "main"
-@import "_hero";
+
 @use 'sass:math';
-@import "_variables";
+@use "_variables" as *;
+@use "_typography" as *;
+@use "_hero" as *;
+@use "_utility" as *;
+@use "_color" as *;
 @import 'normalize.css/normalize.css';
 
-
-h1, h2, h3 {
-    font-size: var(--text-3xl);
-    font-weight: 900;
+body{
+    background-color: $main-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    header, main, footer{
+        display: block;
+    }
+    box-sizing: border-box;
 }
+
+header{
+    background-color: $main-white;
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    background-color: $main-dark;
+    color: $main-white;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Bebas Neue", serif;
+}
+
+h1{font-size: var(--text-4xl);}
+h2{font-size: var(--text-3xl);}
+h3{font-size: var(--text-2xl);}
+h4{font-size: var(--text-xl);}
+h5{font-size: var(--text-lg);}
+h6{font-size: var(--text-md);}
+
+p, ul, li, a, code, pre{
+    font-family: "Poppins", serif;
+}
+
