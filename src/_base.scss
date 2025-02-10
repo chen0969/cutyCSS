@@ -1,4 +1,5 @@
 // this should put some basic codes
+@use 'sass:map';
 @use 'variables' ;
 
 //List style
@@ -15,4 +16,24 @@ ol {
 }
 
 //button style
+@mixin cuty-btn($btn-bg-color: map-get(variables.$theme-color, 'primary' ), $btn-text-color: map-get(variables.$theme-color, 'light'), 
+$btn-border-color: map-get(variables.$theme-color, 'primary'), $btn-border-width: 1px, $btn-border-radius: 5px, $btn-padding: 10px 20px,
+ $btn-font-size: 16px, $btn-font-weight: 500, $btn-transition: variables.$mix-btn) {
+    background-color: $btn-bg-color;
+    color: $btn-text-color;
+    border: $btn-border-width solid $btn-border-color;
+    border-radius: $btn-border-radius;
+    padding: $btn-padding;
+    display: inline-block;
+    font-size: $btn-font-size;
+    font-weight: $btn-font-weight;
+    transition: $btn-transition;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($btn-bg-color, 10%);
+    }
+}
+
+button, button.btn.btn-primary {
+    @include cuty-btn;
 

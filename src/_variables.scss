@@ -1,5 +1,20 @@
 // this should put varible settings, like font size preset or weight settings
 // _variables.scss
+$theme-color: (
+    primary: #0096FF,
+    secondary: #ADD8E6,
+    success: #28a745,
+    info: #17a2b8,
+    warning: #ffc107,
+    danger: #dc3545,
+    light: #f8f9fa,
+    dark: #343a40,
+    cancel: #f27521
+    dark: white,
+    light: black,
+
+)
+
 $font-headings: "Courgette", serif;
 //font weights
 $font-regular: 400;
@@ -20,3 +35,4 @@ $list-ul: square;
 $list-ol: lower-roman;
 
 //button style
+$mix-btn: 0.3s;
