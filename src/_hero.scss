@@ -40,7 +40,7 @@
         border: none;
 
         &:hover {
-          background: darken(#007bff, 10%);
+          background: #007bff, 10%;
         }
       }
 
@@ -49,7 +49,7 @@
         color: #fff;
 
         &:hover {
-          background: darken(#6c757d, 10%);
+          background: #6c757d, 10%;
         }
       }
     }
